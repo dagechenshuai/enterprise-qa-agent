@@ -1,0 +1,74 @@
+{
+  "mode": "real",
+  "initiated_by": "user",
+  "reviewed_by": "AI assistant",
+  "note": "补充问题由 AI 建议，我在本地执行；这里的检查为归档时事后核验，不是原八组自动评估的新增结果。",
+  "cases": [
+    {
+      "id": "I_hotel",
+      "source_run": "20261101T081311481813Z",
+      "status": "answered",
+      "tool_calls": 2,
+      "model_turns": 3,
+      "validation_errors": 0,
+      "start_beijing": "2026-11-01T16:13:11.488828+08:00",
+      "source_sha256": {
+        "corpus.json": "8d2d39a9bf4c3b4a4ab4a5978a27d6686df507e682df4fedc0d95e729917bad3",
+        "input.json": "d1c2c26fc8141deb3ac37d147c19a8f19732b252b061cbcea3b8322708b9ccd7",
+        "manifest.json": "9c057e13f809b121fe6bd32edf93c6f1fff9d0feef17a894c429df7186a94e4d",
+        "output.json": "1e08a638dfedd56a85f446664a12da217989ca907e6b883d4f7d2a64abdb2963",
+        "trace.jsonl": "b4b43942d68d3473907b306ec4495fe28d2bf28cb348e278c3f14b042ecbf605"
+      },
+      "checks": {
+        "expected_status": true,
+        "citations_from_successful_reads": true,
+        "source_matches_current_code": true,
+        "archive_bytes_unchanged": true
+      }
+    },
+    {
+      "id": "J_overdue",
+      "source_run": "20261101T081541967994Z",
+      "status": "insufficient_evidence",
+      "tool_calls": 3,
+      "model_turns": 4,
+      "validation_errors": 1,
+      "start_beijing": "2026-11-01T16:15:41.975933+08:00",
+      "source_sha256": {
+        "corpus.json": "8d2d39a9bf4c3b4a4ab4a5978a27d6686df507e682df4fedc0d95e729917bad3",
+        "input.json": "1d09490ad2f8ec8bb26c8729cd83305c342d2b026874253fb80f033b0145dcc2",
+        "manifest.json": "9c057e13f809b121fe6bd32edf93c6f1fff9d0feef17a894c429df7186a94e4d",
+        "output.json": "e96cc88d50bed3bd76c6101494921d10f27e110995ed210ce00fa575df8fbd49",
+        "trace.jsonl": "5204a639f78c4dd41ceff0ac5756c01d80a39cd95be5f858364cb0eaec30195a"
+      },
+      "checks": {
+        "expected_status": true,
+        "citations_from_successful_reads": true,
+        "source_matches_current_code": true,
+        "archive_bytes_unchanged": true
+      }
+    },
+    {
+      "id": "K_forced_choice",
+      "source_run": "20261101T081648409013Z",
+      "status": "needs_clarification",
+      "tool_calls": 6,
+      "model_turns": 4,
+      "validation_errors": 0,
+      "start_beijing": "2026-11-01T16:16:48.415915+08:00",
+      "source_sha256": {
+        "corpus.json": "14f842e1c040222ac2e0245e7d3dad1644095c162f1645025d0f8be57f8bd1fa",
+        "input.json": "7ff4a183ad9b22f64c585eb75fd95dee9a7ce61e1e891fb5092acdf0ad7ebdf5",
+        "manifest.json": "9c057e13f809b121fe6bd32edf93c6f1fff9d0feef17a894c429df7186a94e4d",
+        "output.json": "44cec9cae54c9800f40022028db4690ac0321ed8d32c5e986454289e8f883770",
+        "trace.jsonl": "36ed7a717ec846e15496b0a20b3bbc44226bf77952d152c5fade129cffacecd6"
+      },
+      "checks": {
+        "expected_status": true,
+        "citations_from_successful_reads": true,
+        "source_matches_current_code": true,
+        "archive_bytes_unchanged": true
+      }
+    }
+  ]
+}

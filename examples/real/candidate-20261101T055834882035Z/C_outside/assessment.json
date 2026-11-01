@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "status": true,
+    "tool_budget": true,
+    "required_citations": true,
+    "quote_facts": true,
+    "answer_facts": true,
+    "observed_tool": true,
+    "no_unsupported_citations": true
+  },
+  "status": "insufficient_evidence",
+  "tool_calls": 6,
+  "semantic_review": "pending"
+}

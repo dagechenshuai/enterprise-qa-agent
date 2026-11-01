@@ -1,0 +1,16 @@
+{
+  "status": "answered",
+  "answer": "报销申请须在费用发生后 30 天内提交。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-01",
+      "chunk_id": "p1",
+      "quote": "报销申请须在费用发生后 30 天内提交。"
+    }
+  ],
+  "gaps": [],
+  "conflicts": [],
+  "follow_up_question": null,
+  "reason": "已读取《报销提交期限》原文，明确提交时限为费用发生后 30 天内；补查未发现其他报销提交时限规定，无冲突。"
+}

@@ -1,0 +1,22 @@
+{
+  "question": "试用期也一样吗？",
+  "history": [
+    {
+      "role": "user",
+      "content": "请假需要提前多久申请？"
+    },
+    {
+      "role": "assistant",
+      "content": "正式员工请假需要提前 2 个工作日。"
+    }
+  ],
+  "mode": "real",
+  "dataset": "normal.json",
+  "corpus_sha256": "8d2d39a9bf4c3b4a4ab4a5978a27d6686df507e682df4fedc0d95e729917bad3",
+  "budget": {
+    "max_model_turns": 10,
+    "max_tool_calls": 8,
+    "timeout_seconds": 60.0
+  },
+  "failures": {}
+}

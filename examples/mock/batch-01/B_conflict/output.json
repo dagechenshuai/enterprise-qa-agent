@@ -1,0 +1,26 @@
+{
+  "status": "needs_clarification",
+  "answer": "报销申请须在费用发生后 30 天内提交。\n报销申请须在费用发生后 15 天内提交。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-01",
+      "chunk_id": "p1",
+      "quote": "报销申请须在费用发生后 30 天内提交。"
+    },
+    {
+      "document_id": "D02",
+      "version_date": "2026-06-01",
+      "chunk_id": "p1",
+      "quote": "报销申请须在费用发生后 15 天内提交。"
+    }
+  ],
+  "gaps": [
+    "适用范围或优先级"
+  ],
+  "conflicts": [
+    "同主题制度存在不同期限"
+  ],
+  "follow_up_question": "请确认适用制度。",
+  "reason": "离线规则替身输出，不证明真实模型决策能力。"
+}

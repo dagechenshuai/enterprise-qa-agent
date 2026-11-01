@@ -1,0 +1,11 @@
+{
+  "status": "insufficient_evidence",
+  "answer": "资料中未找到依据。",
+  "citations": [],
+  "gaps": [
+    "相关制度"
+  ],
+  "conflicts": [],
+  "follow_up_question": null,
+  "reason": "离线规则替身输出，不证明真实模型决策能力。"
+}

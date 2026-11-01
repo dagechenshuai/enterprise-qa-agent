@@ -1,0 +1,25 @@
+{
+  "python": "3.12.4",
+  "mode": "real",
+  "model": "deepseek-flash",
+  "dependencies": {
+    "httpx": "0.28.1",
+    "pydantic": "2.14.2",
+    "jieba": "0.42.1",
+    "python-dotenv": "1.2.4"
+  },
+  "source_sha256": {
+    "__init__.py": "aeec89f055e2c030ef1343d546a6119640cfa39c62c987a8fb03486defc4d882",
+    "agent.py": "cd5abbb55d935d372762f065e46b70d64e5356639c7a2d6983ddb6923eb85d1f",
+    "cli.py": "cf49b5801773f0663aa741cbbf4c26bf843dc5ab643f390329fb34f28343b959",
+    "evaluation.py": "035db0cf64d671e447c8bdbde6c136c5366d9c618ddf5f348fca962ddd7eb49d",
+    "mock_model.py": "21bd680e5b64848dfef5a324d00bb4f88b5518744e3a8cee4365ca77a92016fd",
+    "models.py": "da4b3e15d448e3b767fdc6f0275465d9ad16e5210cf6000ead7d1f7f61ad255a",
+    "retrieval.py": "400409ee42bf61e273a2a6469d3af99e332062a5c17858d4dcfd31c254fa210f",
+    "runtime.py": "2ba57b37dc8146df2f7427e4e0d78e6459f32e286415ca6613dfd8650f88cbf0",
+    "schemas.py": "618ffdbfec3b15aa6b1c1187844f3022f6acfe7371613df49d8a2bb02825295c",
+    "tools.py": "f31512f1bb796c7cac11373532789b939b387bd4039b7c7019d47bfbe5d782fc",
+    "tracing.py": "52484128b2afea6bae3723058eadfe91cdc8975d94e09d12c8a72abf4f4fa396",
+    "validation.py": "0054b34198853aece4450b3a305eea5eef95079ed20fb438244e50a41fd09337"
+  }
+}

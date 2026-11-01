@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "请假需要提前多久申请？"
+  },
+  {
+    "role": "assistant",
+    "content": "正式员工请假需要提前 2 个工作日。"
+  }
+]

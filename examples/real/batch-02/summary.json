@@ -1,0 +1,132 @@
+{
+  "mode": "real",
+  "meaning": "自动属性断言；语义需另行复核",
+  "cases": [
+    {
+      "id": "A_normal",
+      "passed": true,
+      "checks": {
+        "status": true,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true
+      },
+      "status": "answered",
+      "tool_calls": 5,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "B_conflict",
+      "passed": false,
+      "checks": {
+        "status": true,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true,
+        "conflict_and_question": true,
+        "investigated_conflict": false
+      },
+      "status": "needs_clarification",
+      "tool_calls": 4,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "C_outside",
+      "passed": true,
+      "checks": {
+        "status": true,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true,
+        "no_unsupported_citations": true
+      },
+      "status": "insufficient_evidence",
+      "tool_calls": 5,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "D_paraphrase",
+      "passed": false,
+      "checks": {
+        "status": false,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true
+      },
+      "status": "insufficient_evidence",
+      "tool_calls": 3,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "E_followup",
+      "passed": true,
+      "checks": {
+        "status": true,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true
+      },
+      "status": "answered",
+      "tool_calls": 4,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "F_tool_failure",
+      "passed": false,
+      "checks": {
+        "status": false,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true,
+        "failure_observed": true,
+        "model_acted_after_failure": true
+      },
+      "status": "needs_clarification",
+      "tool_calls": 5,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "G_limit",
+      "passed": true,
+      "checks": {
+        "status": true,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true,
+        "stop_reason": true
+      },
+      "status": "incomplete",
+      "tool_calls": 1,
+      "semantic_review": "pending"
+    },
+    {
+      "id": "H_changed",
+      "passed": true,
+      "checks": {
+        "status": true,
+        "tool_budget": true,
+        "required_citations": true,
+        "quote_facts": true,
+        "answer_facts": true,
+        "observed_tool": true
+      },
+      "status": "answered",
+      "tool_calls": 3,
+      "semantic_review": "pending"
+    }
+  ]
+}

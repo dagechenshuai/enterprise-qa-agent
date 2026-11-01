@@ -1,0 +1,11 @@
+{
+  "status": "incomplete",
+  "answer": "当前执行未完成，已取得证据保留在引用中。",
+  "citations": [],
+  "gaps": [
+    "尚未形成经校验的最终答案"
+  ],
+  "conflicts": [],
+  "follow_up_question": null,
+  "reason": "max_tool_calls_reached"
+}

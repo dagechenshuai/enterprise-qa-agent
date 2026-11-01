@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "checks": {
+    "status": true,
+    "tool_budget": true,
+    "required_citations": false,
+    "quote_facts": false,
+    "observed_tool": true
+  },
+  "status": "answered",
+  "tool_calls": 2,
+  "semantic_review": "pending"
+}

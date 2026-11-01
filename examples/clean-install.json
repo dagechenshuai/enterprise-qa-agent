@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-11-01T05:46:03.008834+00:00",
+  "isolation": "独立临时目录，新虚拟环境，无 .env，无 MODEL_* 环境变量",
+  "temporary_directory": "C:\\Users\\admin\\AppData\\Local\\Temp\\enterprise-qa-verify-hm2fmbvt",
+  "results": [
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Using CPython 3.12.4 interpreter at: E:\\anaconda\\python.exe\nCreating virtual environment at: .venv\nResolved 29 packages in 0.88ms\n   Building enterprise-qa-agent @ file:///C:/Users/admin/AppData/Local/Temp/enterprise-qa-verify-hm2fmbvt\n      Built enterprise-qa-agent @ file:///C:/Users/admin/AppData/Local/Temp/enterprise-qa-verify-hm2fmbvt\nPrepared 1 package in 1.12s\nInstalled 29 packages in 290ms\n + annotated-types==0.8.0\n + anyio==4.15.1\n + black==25.12.0\n + certifi==2026.10.23\n + click==8.5.0\n + colorama==0.4.6\n + coverage==7.17.0\n + enterprise-qa-agent==0.1.0 (from file:///C:/Users/admin/AppData/Local/Temp/enterprise-qa-verify-hm2fmbvt)\n + h11==0.16.0\n + httpcore==1.0.9\n + httpx==0.28.1\n + idna==3.20\n + iniconfig==2.3.1\n + isort==6.1.0\n + jieba==0.42.1\n + mypy-extensions==1.1.0\n + packaging==26.3\n + pathspec==1.1.1\n + platformdirs==4.14.2\n + pluggy==1.7.0\n + pydantic==2.14.2\n + pydantic-core==2.50.2\n + pygments==2.21.0\n + pytest==8.4.2\n + pytest-cov==6.3.0\n + python-dotenv==1.2.4\n + pytokens==0.4.1\n + typing-extensions==4.16.0\n + typing-inspection==0.4.4\n"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "......................................................                   [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\jieba\\__init__.py:44\n  C:\\Users\\admin\\AppData\\Local\\Temp\\enterprise-qa-verify-hm2fmbvt\\.venv\\Lib\\site-packages\\jieba\\__init__.py:44: SyntaxWarning: invalid escape sequence '\\.'\n    re_han_default = re.compile(\"([\\u4E00-\\u9FD5a-zA-Z0-9+#&\\._%\\-]+)\", re.U)\n\n.venv\\Lib\\site-packages\\jieba\\__init__.py:46\n  C:\\Users\\admin\\AppData\\Local\\Temp\\enterprise-qa-verify-hm2fmbvt\\.venv\\Lib\\site-packages\\jieba\\__init__.py:46: SyntaxWarning: invalid escape sequence '\\s'\n    re_skip_default = re.compile(\"(\\r\\n|\\s)\", re.U)\n\n.venv\\Lib\\site-packages\\jieba\\finalseg\\__init__.py:78\n  C:\\Users\\admin\\AppData\\Local\\Temp\\enterprise-qa-verify-hm2fmbvt\\.venv\\Lib\\site-packages\\jieba\\finalseg\\__init__.py:78: SyntaxWarning: invalid escape sequence '\\.'\n    re_skip = re.compile(\"([a-zA-Z0-9]+(?:\\.\\d+)?%?)\")\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n54 passed, 3 warnings in 1.15s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "enterprise-qa",
+        "ask",
+        "报销要在几天内提交？",
+        "--mode",
+        "mock"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"output_directory\": \"runs\\\\mock\\\\20261101T054602522972Z\",\n  \"result\": {\n    \"status\": \"answered\",\n    \"answer\": \"报销申请须在费用发生后 30 天内提交。\",\n    \"citations\": [\n      {\n        \"document_id\": \"D01\",\n        \"version_date\": \"2026-01-01\",\n        \"chunk_id\": \"p1\",\n        \"quote\": \"报销申请须在费用发生后 30 天内提交。\"\n      }\n    ],\n    \"gaps\": [],\n    \"conflicts\": [],\n    \"follow_up_question\": null,\n    \"reason\": \"离线规则替身输出，不证明真实模型决策能力。\"\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}

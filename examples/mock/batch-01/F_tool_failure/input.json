@@ -1,0 +1,17 @@
+{
+  "question": "报销要在几天内提交？",
+  "history": [],
+  "mode": "mock",
+  "dataset": "normal.json",
+  "corpus_sha256": "8d2d39a9bf4c3b4a4ab4a5978a27d6686df507e682df4fedc0d95e729917bad3",
+  "budget": {
+    "max_model_turns": 10,
+    "max_tool_calls": 8,
+    "timeout_seconds": 60.0
+  },
+  "failures": {
+    "read_document": [
+      1
+    ]
+  }
+}

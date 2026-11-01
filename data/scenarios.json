@@ -1,0 +1,141 @@
+[
+  {
+    "id": "A_normal",
+    "question": "报销要在几天内提交？",
+    "dataset": "normal.json",
+    "statuses": [
+      "answered"
+    ],
+    "quote_contains": [
+      "30"
+    ],
+    "required_ids": [
+      "D01"
+    ],
+    "answer_patterns": [
+      "30\\s*天"
+    ]
+  },
+  {
+    "id": "B_conflict",
+    "question": "报销要在几天内提交？",
+    "dataset": "conflict.json",
+    "statuses": [
+      "needs_clarification"
+    ],
+    "quote_contains": [
+      "30",
+      "15"
+    ],
+    "required_ids": [
+      "D01",
+      "D02"
+    ],
+    "check_conflict": true,
+    "answer_patterns": [
+      "30\\s*天",
+      "15\\s*天"
+    ]
+  },
+  {
+    "id": "C_outside",
+    "question": "公司明年会涨薪多少？",
+    "dataset": "normal.json",
+    "statuses": [
+      "insufficient_evidence",
+      "needs_clarification"
+    ],
+    "no_citations": true,
+    "answer_patterns": []
+  },
+  {
+    "id": "D_paraphrase",
+    "question": "出差回来多久得把票交上去报账？",
+    "dataset": "normal.json",
+    "statuses": [
+      "answered"
+    ],
+    "quote_contains": [
+      "30"
+    ],
+    "required_ids": [
+      "D01"
+    ],
+    "answer_patterns": [
+      "30\\s*天"
+    ]
+  },
+  {
+    "id": "E_followup",
+    "question": "试用期也一样吗？",
+    "history": [
+      {
+        "role": "user",
+        "content": "请假需要提前多久申请？"
+      },
+      {
+        "role": "assistant",
+        "content": "正式员工请假需要提前 2 个工作日。"
+      }
+    ],
+    "dataset": "normal.json",
+    "statuses": [
+      "answered"
+    ],
+    "quote_contains": [
+      "1 个工作日",
+      "抄送人事"
+    ],
+    "required_ids": [
+      "D04"
+    ],
+    "answer_patterns": [
+      "1\\s*个工作日",
+      "抄送.*人事"
+    ]
+  },
+  {
+    "id": "F_tool_failure",
+    "question": "报销要在几天内提交？",
+    "dataset": "normal.json",
+    "statuses": [
+      "answered",
+      "incomplete"
+    ],
+    "failures": {
+      "read_document": [
+        1
+      ]
+    },
+    "require_failure": true,
+    "answer_patterns": []
+  },
+  {
+    "id": "G_limit",
+    "question": "报销要在几天内提交？",
+    "dataset": "normal.json",
+    "statuses": [
+      "incomplete"
+    ],
+    "max_tool_calls": 1,
+    "reason": "max_tool_calls_reached",
+    "answer_patterns": []
+  },
+  {
+    "id": "H_changed",
+    "question": "报销要在几天内提交？",
+    "dataset": "changed.json",
+    "statuses": [
+      "answered"
+    ],
+    "quote_contains": [
+      "45"
+    ],
+    "required_ids": [
+      "D01"
+    ],
+    "answer_patterns": [
+      "45\\s*天"
+    ]
+  }
+]
